@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2026 at 06:25 AM
+-- Generation Time: Jun 08, 2026 at 12:18 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -149,7 +149,34 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('ZT8r4cGNVcz90nEm4xzBkHSDkv5rAiaAaPHpJcTs', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibjVXUDMzTDMxSmlxcThGSWFZR1NURllHc256TUllNElicDlkbjBvdyI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7czo1OiJyb3V0ZSI7Tjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1779768515);
+('XwJztQKXB30tAyNS5RcNfLo3kYbSJCRI9Qan3vSG', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQjNWZzlSTXU4N0NoZVp6NG1HTmthekU5UzF1a1hvdlZnNVdVUWhhMiI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9wcm9maWwiO3M6NToicm91dGUiO3M6NjoicHJvZmlsIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1780913854);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_activity`
+--
+
+CREATE TABLE `tb_activity` (
+  `id_activity` int(11) NOT NULL,
+  `nama_aktivity` varchar(100) DEFAULT NULL,
+  `keterangan` varchar(999) DEFAULT NULL,
+  `nama_user` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_antarbarang`
+--
+
+CREATE TABLE `tb_antarbarang` (
+  `id_del` int(11) NOT NULL,
+  `asal` varchar(100) DEFAULT NULL,
+  `tujuan` varchar(100) DEFAULT NULL,
+  `keterangan` varchar(100) DEFAULT NULL,
+  `pengantar` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -207,27 +234,78 @@ INSERT INTO `tb_dept` (`id_dept`, `nama_dept`, `jumlah_staff`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tb_luarkota`
+--
+
+CREATE TABLE `tb_luarkota` (
+  `id_perjalanan` int(11) NOT NULL,
+  `asal` varchar(100) DEFAULT NULL,
+  `tujuan` varchar(100) DEFAULT NULL,
+  `keperluan` varchar(100) DEFAULT NULL,
+  `keterangan` varchar(999) DEFAULT NULL,
+  `tanggal_berangkat` varchar(100) DEFAULT NULL,
+  `tanggal_pulang` varchar(100) DEFAULT NULL,
+  `nama_karyawan` varchar(999) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_payroll`
+--
+
+CREATE TABLE `tb_payroll` (
+  `id_pay` int(11) NOT NULL,
+  `nama_user` varchar(100) DEFAULT NULL,
+  `departement` varchar(100) DEFAULT NULL,
+  `jabatan` varchar(100) DEFAULT NULL,
+  `jumlah_gaji` varchar(100) DEFAULT NULL,
+  `tunjangan` varchar(100) DEFAULT NULL,
+  `bpjs` varchar(100) DEFAULT NULL,
+  `jht` varchar(100) DEFAULT NULL,
+  `total_potongan` varchar(100) DEFAULT NULL,
+  `total_diterima` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tb_profil`
 --
 
 CREATE TABLE `tb_profil` (
   `id_user` int(11) NOT NULL,
   `nama_user` varchar(100) DEFAULT NULL,
+  `nik` varchar(100) DEFAULT NULL,
   `tempat_lahir` varchar(100) DEFAULT NULL,
   `tanggal_lahir` date DEFAULT NULL,
   `departement` varchar(100) DEFAULT NULL,
+  `alamat_email` varchar(100) DEFAULT NULL,
   `jabatan` varchar(100) DEFAULT NULL,
   `tanggal_bergabung` date DEFAULT NULL,
   `status_karyawan` varchar(100) DEFAULT NULL,
-  `hak_cuti` varchar(100) DEFAULT NULL
+  `hak_cuti` varchar(100) DEFAULT NULL,
+  `gambar` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tb_profil`
 --
 
-INSERT INTO `tb_profil` (`id_user`, `nama_user`, `tempat_lahir`, `tanggal_lahir`, `departement`, `jabatan`, `tanggal_bergabung`, `status_karyawan`, `hak_cuti`) VALUES
-(1, 'andika', 'pekanbaru', '2001-03-02', 'IT', 'Staff', '2022-03-05', 'PKWT', '3');
+INSERT INTO `tb_profil` (`id_user`, `nama_user`, `nik`, `tempat_lahir`, `tanggal_lahir`, `departement`, `alamat_email`, `jabatan`, `tanggal_bergabung`, `status_karyawan`, `hak_cuti`, `gambar`) VALUES
+(1, 'andika', '25510', 'pekanbaru', '2001-03-02', 'IT', NULL, 'Staff', '2022-03-05', 'PKWT', '3', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_rute`
+--
+
+CREATE TABLE `tb_rute` (
+  `id_rute` int(11) NOT NULL,
+  `nama_rute` varchar(100) DEFAULT NULL,
+  `jarak` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -344,6 +422,18 @@ ALTER TABLE `sessions`
   ADD KEY `sessions_last_activity_index` (`last_activity`);
 
 --
+-- Indexes for table `tb_activity`
+--
+ALTER TABLE `tb_activity`
+  ADD PRIMARY KEY (`id_activity`);
+
+--
+-- Indexes for table `tb_antarbarang`
+--
+ALTER TABLE `tb_antarbarang`
+  ADD PRIMARY KEY (`id_del`);
+
+--
 -- Indexes for table `tb_asset`
 --
 ALTER TABLE `tb_asset`
@@ -362,10 +452,28 @@ ALTER TABLE `tb_dept`
   ADD PRIMARY KEY (`id_dept`);
 
 --
+-- Indexes for table `tb_luarkota`
+--
+ALTER TABLE `tb_luarkota`
+  ADD PRIMARY KEY (`id_perjalanan`);
+
+--
+-- Indexes for table `tb_payroll`
+--
+ALTER TABLE `tb_payroll`
+  ADD PRIMARY KEY (`id_pay`);
+
+--
 -- Indexes for table `tb_profil`
 --
 ALTER TABLE `tb_profil`
   ADD PRIMARY KEY (`id_user`);
+
+--
+-- Indexes for table `tb_rute`
+--
+ALTER TABLE `tb_rute`
+  ADD PRIMARY KEY (`id_rute`);
 
 --
 -- Indexes for table `tb_status`
@@ -409,6 +517,18 @@ ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `tb_activity`
+--
+ALTER TABLE `tb_activity`
+  MODIFY `id_activity` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tb_antarbarang`
+--
+ALTER TABLE `tb_antarbarang`
+  MODIFY `id_del` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `tb_asset`
 --
 ALTER TABLE `tb_asset`
@@ -427,10 +547,28 @@ ALTER TABLE `tb_dept`
   MODIFY `id_dept` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `tb_luarkota`
+--
+ALTER TABLE `tb_luarkota`
+  MODIFY `id_perjalanan` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tb_payroll`
+--
+ALTER TABLE `tb_payroll`
+  MODIFY `id_pay` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `tb_profil`
 --
 ALTER TABLE `tb_profil`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tb_rute`
+--
+ALTER TABLE `tb_rute`
+  MODIFY `id_rute` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tb_status`

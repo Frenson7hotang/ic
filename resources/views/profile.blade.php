@@ -739,24 +739,28 @@
                                     <table id="example3" class="display" style="min-width: 845px">
                                         <thead>
                                             <tr>
-                                                <th></th>
-                                                <th>Name</th>
-                                                <th>Department</th>
-                                                <th>Gender</th>
-                                                <th>Education</th>
-                                                <th>Mobile</th>
-                                                <th>Email</th>
-                                                <th>Joining Date</th>
+                                                <th>NO</th>
+                                                <th>Nama</th>
+                                                <th>NIK</th>
+                                                <th>Tempat Lahir</th>
+                                                <th>Tanggal Lahir</th>
+                                                <th>Departement</th>
+                                                <th>Jabatan</th>
+                                                <th>Tanggal Bergabung</th>
+                                                <th>Status Karyawan</th>
+                                                <th>Hak Cuti</th>
+                                                <th>Gambar</th>`
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+											@foreach ($profil as $key => $profils)
                                             <tr>
-												<td><img class="rounded-circle" width="35" src="{{ asset('load/images/profile/small/pic10.jpg') }}" alt=""></td>
-                                                <td>Shou Itou</td>
-                                                <td>Regional Marketing</td>
-                                                <td>Female</td>
-												<td>B.COM., M.COM.</td>
+												<td>{{ $key + 1 }}</td>
+                                                <td>{{$profils -> nama_user}}</td>
+                                                <td>{{$profils -> nik}}</td>
+                                                <td>{{$profils -> tempat_lahir}}</td>
+												<td>{{$profils -> tanggal_lahir}}</td>
                                                 <td><a href="javascript:void(0);"><strong>123 456 7890</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>info@example.com</strong></a></td>
                                                 <td>2011/08/14</td>
@@ -767,6 +771,7 @@
 													</div>
 												</td>
                                             </tr>
+											@endforeach
                                         </tbody>
                                     </table>
                                 </div>

@@ -8,7 +8,9 @@ class ProfilController extends Controller
 {
     public function profil()
     {
-        return view('profile');
+        $profil = \App\Models\ProfilModel::all();
+
+        return view('profile', ['profil' => $profil]);
     }
 
     public function tambah()

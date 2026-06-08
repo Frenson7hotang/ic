@@ -11,14 +11,13 @@
 	<meta name="description" content="Siandika - Dashboard">
 	<meta property="og:title" content="Siandika - Dashboard">
 	<meta property="og:description" content="Siandika - Dashboard">
-	<meta property="og:image" content="https://dompet.dexignlab.com/xhtml/social-image.png">
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Dompet : Payment Admin Template</title>
+	<title>Si Andika - APP</title>
 	
 	<!-- FAVICONS ICON -->
-	<link rel="shortcut icon" type="image/png" href="{{ asset('load/images/favicon.png') }}">
+	<link rel="shortcut icon" type="image/png" href="{{ asset('load/icons/app-andika.png') }}">
 	    <!-- Datatable -->
     <link href="{{ asset('load/vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet">
 
