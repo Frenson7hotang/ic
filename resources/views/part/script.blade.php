@@ -15,4 +15,15 @@
 	<script src="{{ asset('load/js/dlabnav-init.js') }}"></script>
 	<script src="{{ asset('load/js/demo.js') }}"></script>
     <script src="{{ asset('load/js/styleSwitcher.js') }}"></script>
+
+	<!-- Datatable -->
+    <script src="{{ asset('load/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('load/js/plugins-init/datatables.init.js') }}"></script>
+
+	<script src="{{ asset('load/vendor/jquery-nice-select/js/jquery.nice-select.min.js') }}"></script>
+
+    <script src="{{ asset('js/custom.min.js') }}"></script>
+	<script src="{{ asset('js/dlabnav-init.js') }}"></script>
+	<script src="{{ asset('js/demo.js') }}"></script>
+    <script src="{{ asset('js/styleSwitcher.js') }}"></script>
 	

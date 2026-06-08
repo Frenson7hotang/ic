@@ -30942,3 +30942,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-theme-version="dark"] .footer .copyright a {
       color: #fff; }
 
+.brand-logo img {
+    height: 200px;
+    width: auto;
+}

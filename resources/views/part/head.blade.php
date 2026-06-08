@@ -19,10 +19,15 @@
 	
 	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="{{ asset('load/images/favicon.png') }}">
-	
-	<link href="{{ asset ('load/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
+	    <!-- Datatable -->
+    <link href="{{ asset('load/vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet">
+
+	<link href="{{ asset('load/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
 	<link rel="stylesheet" href="{{ asset('load/vendor/nouislider/nouislider.min.css') }}">
 	<!-- Style css -->
+    <link href="{{ asset('load/css/style.css') }}" rel="stylesheet">
+	
+	<link href="{{ asset('load/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
     <link href="{{ asset('load/css/style.css') }}" rel="stylesheet">
 	
 </head>
