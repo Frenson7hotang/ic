@@ -1,33 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="admin, dashboard">
-	<meta name="author" content="DexignZone">
-	<meta name="robots" content="index, follow">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Dompet : Payment Admin Template">
-	<meta property="og:title" content="Dompet : Payment Admin Template">
-	<meta property="og:description" content="Dompet : Payment Admin Template">
-	<meta property="og:image" content="https://dompet.dexignlab.com/xhtml/social-image.png">
-	<meta name="format-detection" content="telephone=no">
-	
-	<!-- PAGE TITLE HERE -->
-	<title>Dompet : Payment Admin Template</title>
-	
-	<!-- FAVICONS ICON -->
-	<link rel="shortcut icon" type="image/png" href="{{ asset('load/images/favicon.png') }}">
-    <!-- Custom Stylesheet -->
-	<link href="{{ asset('load/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
-    <link href="{{ asset('load/css/style.css') }}" rel="stylesheet">
-
-</head>
+@include('part.head')
 
 <body>
-
-
     <!--**********************************
         Main wrapper start
     ***********************************-->
@@ -87,7 +62,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/2.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -99,7 +74,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/3.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -111,7 +86,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/4.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -124,7 +99,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/5.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -136,7 +111,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/1.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -148,7 +123,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/2.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -161,7 +136,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/3.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -173,7 +148,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/4.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -186,7 +161,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/5.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -198,7 +173,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/1.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -210,7 +185,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/2.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -222,7 +197,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/3.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -235,7 +210,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/4.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -247,7 +222,7 @@
 									<li class="dlab-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('load/images/avatar/5.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -549,7 +524,177 @@
         <!--**********************************
             Header start
         ***********************************-->
-        @include('part.head')
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+							<div class="dashboard_bar">
+                                Form Element 
+                            </div>
+                        </div>
+                        <ul class="navbar-nav header-right">
+							<li class="nav-item">
+								<div class="input-group search-area">
+									<input type="text" class="form-control" placeholder="Search here...">
+									<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+								</div>
+							</li>
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="javascript:void(0);" data-bs-toggle="dropdown">
+									<svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3.88552 6.2921C1.95571 6.54135 0.439911 8.19656 0.439911 10.1896V10.7253C0.439911 12.8874 2.21812 14.6725 4.38019 14.6725H12.7058V24.9768H7.01104C5.77451 24.9768 4.82009 24.0223 4.82009 22.7858V18.4039C4.84523 16.6262 2.16581 16.6262 2.19096 18.4039V22.7858C2.19096 25.4334 4.36345 27.6059 7.01104 27.6059H21.0331C23.6807 27.6059 25.8532 25.4334 25.8532 22.7858V13.9981C26.9064 13.286 27.6042 12.0802 27.6042 10.7253V10.1896C27.6042 8.17115 26.0501 6.50077 24.085 6.28526C24.0053 0.424609 17.6008 -1.28785 13.9827 2.48534C10.3936 -1.60185 3.7545 1.06979 3.88552 6.2921ZM12.7058 5.68103C12.7058 5.86287 12.7033 6.0541 12.7058 6.24246H6.50609C6.55988 2.31413 11.988 1.90765 12.7058 5.68103ZM21.4559 6.24246H15.3383C15.3405 6.05824 15.3538 5.87664 15.3383 5.69473C15.9325 2.04532 21.3535 2.18829 21.4559 6.24246ZM4.38019 8.87502H12.7058V12.0382H4.38019C3.62918 12.0382 3.06562 11.4764 3.06562 10.7253V10.1896C3.06562 9.43859 3.6292 8.87502 4.38019 8.87502ZM15.3383 8.87502H23.6656C24.4166 8.87502 24.9785 9.43859 24.9785 10.1896V10.7253C24.9785 11.4764 24.4167 12.0382 23.6656 12.0382H15.3383V8.87502ZM15.3383 14.6725H23.224V22.7858C23.224 24.0223 22.2696 24.9768 21.0331 24.9768H15.3383V14.6725Z" fill="#4f7086"></path> 
+									</svg>
+									<span class="badge light text-white bg-primary rounded-circle">2</span>
+                                </a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<div id="dlab_W_TimeLine02" class="widget-timeline dlab-scroll style-1 ps ps--active-y p-3 height370">
+                                    <ul class="timeline">
+                                        <li>
+                                            <div class="timeline-badge primary"></div>
+                                            <a class="timeline-panel text-muted" href="javascript:void(0);">
+                                                <span>10 minutes ago</span>
+                                                <h6 class="mb-0">Youtube, a video-sharing website, goes live <strong class="text-primary">$500</strong>.</h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge info">
+                                            </div>
+                                            <a class="timeline-panel text-muted" href="javascript:void(0);">
+                                                <span>20 minutes ago</span>
+                                                <h6 class="mb-0">New order placed <strong class="text-info">#XF-2356.</strong></h6>
+												<p class="mb-0">Quisque a consequat ante Sit amet magna at volutapt...</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge danger">
+                                            </div>
+                                            <a class="timeline-panel text-muted" href="javascript:void(0);">
+                                                <span>30 minutes ago</span>
+                                                <h6 class="mb-0">john just buy your product <strong class="text-warning">Sell $250</strong></h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge success">
+                                            </div>
+                                            <a class="timeline-panel text-muted" href="javascript:void(0);">
+                                                <span>15 minutes ago</span>
+                                                <h6 class="mb-0">StumbleUpon is acquired by eBay. </h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge warning">
+                                            </div>
+                                            <a class="timeline-panel text-muted" href="javascript:void(0);">
+                                                <span>20 minutes ago</span>
+                                                <h6 class="mb-0">Mashable, a news website and blog, goes live.</h6>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge dark">
+                                            </div>
+                                            <a class="timeline-panel text-muted" href="javascript:void(0);">
+                                                <span>20 minutes ago</span>
+                                                <h6 class="mb-0">Mashable, a news website and blog, goes live.</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+								</div>
+							</li>
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link  ai-icon" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                                   <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.638 4.9936V2.3C12.638 1.5824 13.2484 1 14.0006 1C14.7513 1 15.3631 1.5824 15.3631 2.3V4.9936C17.3879 5.2718 19.2805 6.1688 20.7438 7.565C22.5329 9.2719 23.5384 11.5872 23.5384 14V18.8932L24.6408 20.9966C25.1681 22.0041 25.1122 23.2001 24.4909 24.1582C23.8709 25.1163 22.774 25.7 21.5941 25.7H15.3631C15.3631 26.4176 14.7513 27 14.0006 27C13.2484 27 12.638 26.4176 12.638 25.7H6.40705C5.22571 25.7 4.12888 25.1163 3.50892 24.1582C2.88759 23.2001 2.83172 22.0041 3.36039 20.9966L4.46268 18.8932V14C4.46268 11.5872 5.46691 9.2719 7.25594 7.565C8.72068 6.1688 10.6119 5.2718 12.638 4.9936ZM14.0006 7.5C12.1924 7.5 10.4607 8.1851 9.18259 9.4045C7.90452 10.6226 7.18779 12.2762 7.18779 14V19.2C7.18779 19.4015 7.13739 19.6004 7.04337 19.7811C7.04337 19.7811 6.43703 20.9381 5.79662 22.1588C5.69171 22.3603 5.70261 22.6008 5.82661 22.7919C5.9506 22.983 6.16996 23.1 6.40705 23.1H21.5941C21.8298 23.1 22.0492 22.983 22.1732 22.7919C22.2972 22.6008 22.3081 22.3603 22.2031 22.1588C21.5627 20.9381 20.9564 19.7811 20.9564 19.7811C20.8624 19.6004 20.8133 19.4015 20.8133 19.2V14C20.8133 12.2762 20.0953 10.6226 18.8172 9.4045C17.5391 8.1851 15.8073 7.5 14.0006 7.5Z" fill="#4f7086"></path>
+									</svg>
+                                    <span class="badge light text-white bg-primary rounded-circle">12</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <div id="dlab_W_Notification1" class="widget-media dlab-scroll p-3" style="height:380px;">
+										<ul class="timeline">
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2">
+														<img alt="image" width="50" src="images/avatar/1.jpg">
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Dr sultads Send you Photo</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2 media-info">
+														KG
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Resport created successfully</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2 media-success">
+														<i class="fa fa-home"></i>
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Reminder : Treatment Time!</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											 <li>
+												<div class="timeline-panel">
+													<div class="media me-2">
+														<img alt="image" width="50" src="images/avatar/1.jpg">
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Dr sultads Send you Photo</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2 media-danger">
+														KG
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Resport created successfully</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2 media-primary">
+														<i class="fa fa-home"></i>
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Reminder : Treatment Time!</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+                                    <a class="all-notification" href="javascript:void(0);">See all notifications <i class="ti-arrow-end"></i></a>
+                                </div>
+                            </li>
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell bell-link" href="javascript:void(0);">
+                                 <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M27 7.88883C27 5.18897 24.6717 3 21.8 3C17.4723 3 10.5277 3 6.2 3C3.3283 3 1 5.18897 1 7.88883V23.7776C1 24.2726 1.31721 24.7174 1.80211 24.9069C2.28831 25.0963 2.8473 24.9912 3.2191 24.6417C3.2191 24.6417 5.74629 22.2657 7.27769 20.8272C7.76519 20.3688 8.42561 20.1109 9.11591 20.1109H21.8C24.6717 20.1109 27 17.922 27 15.2221V7.88883ZM24.4 7.88883C24.4 6.53951 23.2365 5.44441 21.8 5.44441C17.4723 5.44441 10.5277 5.44441 6.2 5.44441C4.7648 5.44441 3.6 6.53951 3.6 7.88883V20.8272L5.4382 19.0989C6.4132 18.1823 7.73661 17.6665 9.11591 17.6665H21.8C23.2365 17.6665 24.4 16.5726 24.4 15.2221V7.88883ZM7.5 15.2221H17.9C18.6176 15.2221 19.2 14.6745 19.2 13.9999C19.2 13.3252 18.6176 12.7777 17.9 12.7777H7.5C6.7824 12.7777 6.2 13.3252 6.2 13.9999C6.2 14.6745 6.7824 15.2221 7.5 15.2221ZM7.5 10.3333H20.5C21.2176 10.3333 21.8 9.7857 21.8 9.11104C21.8 8.43638 21.2176 7.88883 20.5 7.88883H7.5C6.7824 7.88883 6.2 8.43638 6.2 9.11104C6.2 9.7857 6.7824 10.3333 7.5 10.3333Z" fill="#4f7086"></path>
+									</svg>
+									<span class="badge light text-white bg-primary rounded-circle">5</span>
+                                </a>
+							</li>
+                        </ul>
+                    </div>
+				</nav>
+			</div>
+		</div>
                     
         <!--**********************************
             Header end ti-comment-alt
@@ -576,989 +721,74 @@
                 </div>
                 <!-- row -->
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6">
+					<div class="col-xl-auto col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Input Style</h4>
+                                <h4 class="card-title">Tambah Data Karyawan</h4>
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
                                     <form>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control input-default " placeholder="input-default">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control input-rounded" placeholder="input-rounded">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Checkbox</h4>
-                            </div>
-                            <div class="card-body">
-								<div class="row">
-									<div class="col-xl-4 col-xxl-6 col-6">
-										<div class="form-check custom-checkbox mb-3">
-											<input type="checkbox" class="form-check-input" id="customCheckBox1" required="">
-											<label class="form-check-label" for="customCheckBox1">Checkbox 1</label>
-										</div>
-									</div>
-									<div class="col-xl-4 col-xxl-6 col-6">
-										<div class="form-check custom-checkbox mb-3 checkbox-info">
-											<input type="checkbox" class="form-check-input" checked="" id="customCheckBox2" required="">
-											<label class="form-check-label" for="customCheckBox2">Checkbox 2</label>
-										</div>
-									</div>
-									<div class="col-xl-4 col-xxl-6 col-6">
-										<div class="form-check custom-checkbox mb-3 checkbox-success">
-											<input type="checkbox" class="form-check-input" checked="" id="customCheckBox3" required="">
-											<label class="form-check-label" for="customCheckBox3">Checkbox 3</label>
-										</div>
-									</div>
-									<div class="col-xl-4 col-xxl-6 col-6">
-										<div class="form-check custom-checkbox mb-3 checkbox-warning">
-											<input type="checkbox" class="form-check-input" checked="" id="customCheckBox4" required="">
-											<label class="form-check-label" for="customCheckBox4">Checkbox 4</label>
-										</div>
-									</div>
-									<div class="col-xl-4 col-xxl-6 col-6">
-										<div class="form-check custom-checkbox mb-3 checkbox-danger">
-											<input type="checkbox" class="form-check-input" checked="" id="customCheckBox5" required="">
-											<label class="form-check-label" for="customCheckBox5">Checkbox 5</label>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="form-check custom-checkbox mb-3 check-xs">
-											<input type="checkbox" class="form-check-input" checked="" id="customCheckBox6" required="">
-											<label class="form-check-label" for="customCheckBox6"></label>
-										</div>
-									</div>
-									<div class="col">
-										<div class="form-check custom-checkbox mb-3 checkbox-info">
-											<input type="checkbox" class="form-check-input" checked="" id="customCheckBox7" required="">
-											<label class="form-check-label" for="customCheckBox7"></label>
-										</div>
-									</div>
-									<div class="col">
-										<div class="form-check custom-checkbox mb-3 checkbox-success check-lg">
-											<input type="checkbox" class="form-check-input" checked="" id="customCheckBox8" required="">
-											<label class="form-check-label" for="customCheckBox8"></label>
-										</div>
-									</div>
-									<div class="col">
-										<div class="form-check custom-checkbox mb-3 checkbox-warning check-xl">
-											<input type="checkbox" class="form-check-input" checked="" id="customCheckBox9" required="">
-											<label class="form-check-label" for="customCheckBox9"></label>
-										</div>
-									</div>
-								</div>
-
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Textarea</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3">
-                                            <textarea class="form-control" rows="4" id="comment"></textarea>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Input Size</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3">
-                                            <input class="form-control form-control-lg" type="text" placeholder="form-control-lg">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input class="form-control" type="text" placeholder="Default input">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input class="form-control form-control-sm" type="text" placeholder="form-control-sm">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Select Size</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-										<select class="default-select form-control wide mb-3">
-											<option>Option 1</option>
-											<option>Option 2</option>
-											<option>Option 3</option>
-										</select>
-										<select class="default-select form-control wide mb-3">
-											<option>Option 1</option>
-											<option>Option 2</option>
-											<option>Option 3</option>
-										</select>
-										<select class="default-select form-control wide">
-											<option>Option 1</option>
-											<option>Option 2</option>
-											<option>Option 3</option>
-										</select>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Select List</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label class="form-label">Select list (select one):</label>
-                                            <select class="default-select  form-control wide">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                            </select>
-                                        </div>
-										<select multiple="" class="default-select form-control wide mt-3">
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Horizontal Form</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-
                                         <div class="row">
                                             <div class="mb-3 col-md-6">
-                                                <label class="form-label">First Name</label>
-                                                <input type="text" class="form-control" placeholder="1234 Main St">
+                                                <label class="form-label">Nama Karyawan</label>
+                                                <input type="text" class="form-control" name="nama_user" placeholder="masukkan nama karyawan.." required>
                                             </div>
                                             <div class="mb-3 col-md-6">
-                                                <label class="form-label">Email</label>
-                                                <input type="email" class="form-control" placeholder="Email">
+                                                <label class="form-label">NIK</label>
+                                                <input type="text" class="form-control" name="nik" placeholder="masukkan nik karyawan.." required>
                                             </div>
                                             <div class="mb-3 col-md-6">
-                                                <label class="form-label">Password</label>
-                                                <input type="password" class="form-control" placeholder="Password">
+                                                <label class="form-label">Tempat Lahir</label>
+                                                <input type="text" class="form-control" name="tempat_lahir" placeholder="masukkan tempat lahir.." required>
                                             </div>
                                             <div class="mb-3 col-md-6">
-                                                <label>City</label>
-                                                <input type="text" class="form-control">
+                                                <label>Tanggal Lahir</label>
+                                                <input type="date" class="form-control" name="tanggal_lahir">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="mb-3 col-md-4">
-                                                <label class="form-label">State</label>
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Departement</label>
                                                 <select id="inputState" class="default-select form-control wide">
-                                                    <option selected="">Choose...</option>
+                                                    <option selected="">Pilih...</option>
                                                     <option>Option 1</option>
                                                     <option>Option 2</option>
                                                     <option>Option 3</option>
                                                 </select>
                                             </div>
-                                            <div class="mb-3 col-md-2">
-                                                <label class="form-label">Zip</label>
-                                                <input type="text" class="form-control">
+                                             <div class="mb-3 col-md-6">
+                                                <label>Jabatan</label>
+                                                <input type="text" class="form-control" name="jabatan" placeholder="jabatan.." required>
                                             </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox">
-                                                <label class="form-check-label">
-                                                    Check me out
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Sign in</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Vertical Form</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-3 col-form-label">Email</label>
-                                            <div class="col-sm-9">
-                                                <input type="email" class="form-control" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-3 col-form-label">Password</label>
-                                            <div class="col-sm-9">
-                                                <input type="password" class="form-control" placeholder="Password">
-                                            </div>
-                                        </div>
-                                        <fieldset class="mb-3">
-                                            <div class="row">
-                                                <label class="col-form-label col-sm-3 pt-0">Radios</label>
-                                                <div class="col-sm-9">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked="">
-                                                        <label class="form-check-label">
-                                                            First radio
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option2">
-                                                        <label class="form-check-label">
-                                                            Second radio
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check disabled">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option3" disabled="">
-                                                        <label class="form-check-label">
-                                                            Third disabled radio
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        <div class="mb-3 row">
-                                            <div class="col-sm-3">Checkbox</div>
-                                            <div class="col-sm-9">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox">
-                                                    <label class="form-check-label">
-                                                        Example checkbox
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <div class="col-sm-10">
-                                                <button type="submit" class="btn btn-primary">Sign in</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Checkboxes</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3">
-                                            <div class="form-check mb-2">
-                                                <input type="checkbox" class="form-check-input" id="check1" value="" checked="">
-                                                <label class="form-check-label" for="check1">Option 1</label>
-                                            </div>
-                                            <div class="form-check mb-2">
-                                                <input type="checkbox" class="form-check-input" id="check2" value="">
-                                                <label class="form-check-label" for="check2">Option 2</label>
-                                            </div>
-                                            <div class="form-check disabled">
-                                                <input type="checkbox" class="form-check-input" id="check3" value="" disabled="">
-                                                <label class="form-check-label" for="check3">Disabled</label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Inline Checkboxes</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="checkbox" class="form-check-input" value="" checked="">Option 1
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="checkbox" class="form-check-input" value="">Option 2
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline disabled">
-                                                <label class="form-check-label">
-                                                    <input type="checkbox" class="form-check-input" value="" disabled="">Disabled
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Radio Buttons</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3 mb-0">
-                                            <div class="radio">
-                                                <label><input type="radio" name="optradio"> Option 1</label>
-                                            </div>
-                                            <div class="radio">
-                                                <label><input type="radio" name="optradio"> Option 2</label>
-                                            </div>
-                                            <div class="radio disabled">
-                                                <label><input type="radio" name="optradio" disabled=""> Option 3</label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Inline Radio </h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3 mb-0">
-                                            <label class="radio-inline me-3"><input type="radio" name="optradio"> Option 1</label>
-                                            <label class="radio-inline me-3"><input type="radio" name="optradio"> Option 2</label>
-                                            <label class="radio-inline me-3"><input type="radio" name="optradio"> Option 3</label>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Readonly</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3">
-                                            <input class="form-control" type="text" placeholder="Readonly input here…" readonly="">
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-3 col-form-label">Email</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" readonly="" class="form-control-plaintext" value="email@example.com">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-3 col-form-label">Password</label>
-                                            <div class="col-sm-9">
-                                                <input type="password" class="form-control" placeholder="Password">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Inline Form</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form class="d-flex align-items-center">
-                                        <div class="mb-3 mb-2">
-                                            <label class="sr-only">Email</label>
-                                            <input type="text" readonly="" class="form-control-plaintext" value="email@example.com">
-                                        </div>
-                                        <div class="mb-2 mx-sm-3">
-                                            <label class="sr-only">Password</label>
-                                            <input type="password" class="form-control" placeholder="Password">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Form grid</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
                                         <div class="row">
-                                            <div class="col-sm-6">
-                                                <input type="text" class="form-control" placeholder="First name">
+                                                <div class="mb-3 col-md-6">
+                                                <label>Tanggal Bergabung</label>
+                                                <input type="date" class="form-control" name="tanggal_bergabung">
                                             </div>
-                                            <div class="col-sm-6 mt-2 mt-sm-0">
-                                                <input type="text" class="form-control" placeholder="Last name">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Form Row</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <input type="text" class="form-control" placeholder="First name">
-                                            </div>
-                                            <div class="col-sm-6 mt-2 mt-sm-0">
-                                                <input type="text" class="form-control" placeholder="Last name">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Form Label Size</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-2 col-form-label col-form-label-sm">Email</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control form-control-sm" placeholder="col-form-label-sm">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-2 col-form-label">Email</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" placeholder="col-form-label">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-2 col-form-label col-form-label-lg">Email</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control form-control-lg" placeholder="col-form-label-lg">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Column size</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-sm-7">
-                                                <input type="text" class="form-control" placeholder="City">
-                                            </div>
-                                            <div class="col mt-2 mt-sm-0">
-                                                <input type="text" class="form-control" placeholder="State">
-                                            </div>
-                                            <div class="col mt-2 mt-sm-0">
-                                                <input type="text" class="form-control" placeholder="Zip">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Auto-sizing</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <label class="sr-only">Name</label>
-                                                <input type="text" class="form-control mb-2" placeholder="Jane Doe">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label class="sr-only">Username</label>
-                                                <div class="input-group mb-2">
-													<div class="input-group-text">@</div>
-                                                    <input type="text" class="form-control" placeholder="Username">
-                                                </div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <div class="form-check mb-2">
-                                                    <input class="form-check-input" type="checkbox">
-                                                    <label class="form-check-label">
-                                                        Remember me
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Custom Select</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <div class="row align-items-center">
-                                            <div class="col-auto my-1">
-                                                <label class="me-sm-2">Preference</label>
-                                                <select class="me-sm-2 default-select form-control wide" id="inlineFormCustomSelect">
-                                                    <option selected="">Choose...</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Status Karyawan</label>
+                                                <select id="inputState" class="default-select form-control wide">
+                                                    <option selected="">Pilih...</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
                                                 </select>
                                             </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Disabled forms</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form>
-                                        <fieldset disabled="">
-                                            <div class="mb-3">
-                                                <label class="form-label">Disabled input</label>
-                                                <input type="text" class="form-control" placeholder="Disabled input">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Hak Cuti</label>
+                                                <input type="text" class="form-control" name="hak_cuti" placeholder="masukkan hak cuti" require>
                                             </div>
-                                            <div class="mb-3">
-                                                <label class="form-label">Disabled select menu</label>
-                                                <select class="form-control ">
-                                                    <option>Disabled select</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" disabled="">
-                                                <label class="form-check-label">
-                                                    Can't check this
-                                                </label>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary mt-3">Submit</button>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Input Group</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form action="#">
-                                        <div class="input-group mb-3 input-warning-o">
-											<span class="input-group-text">@</span>
-                                            <input type="text" class="form-control" placeholder="Username">
-                                        </div>
-										<div class="input-group mb-3 input-success-o">
-											<span class="input-group-text">@</span>
-                                            <input type="text" class="form-control" placeholder="Username">
-                                        </div>
-                                        <div class="input-group mb-3 input-primary">
-                                            <input type="text" class="form-control" placeholder="Recipient's username">
-											<span class="input-group-text">@example.com</span>
-                                        </div>
-
-                                        <label>Your vanity URL</label>
-                                        <div class="input-group mb-3  input-success">
-											<span class="input-group-text">https://example.com</span>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="input-group mb-3  input-info">
-											<span class="input-group-text">$</span>
-                                            <input type="text" class="form-control">
-											<span class="input-group-text">.00</span>
-                                        </div>
-
-                                        <div class="input-group   input-danger">
-											<span class="input-group-text">With textarea</span>
-                                            <textarea class="form-control"></textarea>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Input Group Size</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form action="#">
-                                        <div class="input-group input-group-sm mb-3">
-											<span class="input-group-text">Small</span>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="input-group mb-3">
-											<span class="input-group-text">Default</span>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="input-group input-group-lg">
-											<span class="input-group-text">Large</span>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Checkboxes and radios</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form action="#">
-                                        <div class="input-group mb-3">
-											<div class="input-group-text">
-												<input type="checkbox">
-											</div>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="input-group">
-											<div class="input-group-text">
-												<input type="radio">
-											</div>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Multiple inputs</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form action="#">
-                                        <div class="input-group">
-											<span class="input-group-text">First and last name</span>
-                                            <input type="text" class="form-control">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Multiple addons</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form action="#">
-                                        <div class="input-group mb-3">
-											<span class="input-group-text">$</span>
-											<span class="input-group-text">0.00</span>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="input-group">
-                                            <input type="text" class="form-control">
-											<span class="input-group-text">$</span>
-											<span class="input-group-text">0.00</span>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Button addons</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form action="#">
-                                        <div class="input-group mb-3">
-											<button class="btn btn-primary" type="button">Button</button>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control">
-											<button class="btn btn-primary" type="button">Button</button>
-                                        </div>
-
-                                        <div class="input-group mb-3">
-											<button class="btn btn-primary" type="button">Button</button>
-											<button class="btn btn-primary" type="button">Button</button>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="input-group">
-                                            <input type="text" class="form-control">
-											<button class="btn btn-primary" type="button">Button</button>
-											<button class="btn btn-primary" type="button">Button</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Buttons with dropdowns</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form action="#">
-                                        <div class="input-group mb-3">
-											<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">Dropdown</button>
-											<div class="dropdown-menu">
-												<a class="dropdown-item" href="#">Action</a>
-												<a class="dropdown-item" href="#">Another action</a>
-												<a class="dropdown-item" href="#">Something else here</a>
-												<div role="separator" class="dropdown-divider"></div>
-												<a class="dropdown-item" href="#">Separated link</a>
-											</div>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="input-group">
-                                            <input type="text" class="form-control">
-											<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">Dropdown</button>
-											<div class="dropdown-menu">
-												<a class="dropdown-item" href="#">Action</a>
-												<a class="dropdown-item" href="#">Another action</a>
-												<a class="dropdown-item" href="#">Something else here</a>
-												<div role="separator" class="dropdown-divider"></div>
-												<a class="dropdown-item" href="#">Separated link</a>
-											</div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Segmented buttons</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form action="#">
-                                        <div class="input-group mb-3">
-											<button type="button" class="btn btn-primary">Action</button>
-											<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
-												<span class="sr-only">Toggle Dropdown</span>
-											</button>
-											<div class="dropdown-menu">
-												<a class="dropdown-item" href="#">Action</a>
-												<a class="dropdown-item" href="#">Another action</a>
-												<a class="dropdown-item" href="#">Something else here</a>
-												<div role="separator" class="dropdown-divider"></div>
-												<a class="dropdown-item" href="#">Separated link</a>
-											</div>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="input-group">
-                                            <input type="text" class="form-control">
-											<button type="button" class="btn btn-primary">Action</button>
-											<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
-												<span class="sr-only">Toggle Dropdown</span>
-											</button>
-											<div class="dropdown-menu">
-												<a class="dropdown-item" href="#">Action</a>
-												<a class="dropdown-item" href="#">Another action</a>
-												<a class="dropdown-item" href="#">Something else here</a>
-												<div role="separator" class="dropdown-divider"></div>
-												<a class="dropdown-item" href="#">Separated link</a>
-											</div>
-										</div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Custom select</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form">
-                                    <form action="#">
-                                        <div class="input-group mb-3">
-											<label class="input-group-text mb-0">Options</label>
-                                            <select class="default-select  form-control wide">
-                                                <option selected="">Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-group mb-3">
-                                            <select class="default-select form-control wide">
-                                                <option selected="">Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-											<label class="input-group-text  mb-0">Options</label>
-                                        </div>
-
-                                        <div class="input-group mb-3">
-											<button class="btn btn-primary" type="button">Button</button>
-                                            <select class="default-select form-control wide">
-                                                <option selected="">Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-group">
-                                            <select class="default-select form-control wide">
-                                                <option selected="">Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-											<button class="btn btn-primary" type="button">Button</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-6 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Custom file input</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="basic-form custom_file_input">
-                                    <form action="#">
-                                        <div class="input-group mb-3">
-											<span class="input-group-text">Upload</span>
-                                            <div class="form-file">
-                                                <input type="file" class="form-file-input form-control">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Gambar</label>
+                                                <input type="file" class="form-control" name="gambar" require>
                                             </div>
                                         </div>
-
-                                        <div class="input-group mb-3">
-                                            <div class="form-file">
-                                                <input type="file" class="form-file-input form-control">
-                                            </div>
-											<span class="input-group-text">Upload</span>
-                                        </div>
-
-                                        <div class="input-group mb-3">
-											<button class="btn btn-primary btn-sm" type="button">Button</button>
-                                            <div class="form-file">
-                                                <input type="file" class="form-file-input form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-group">
-                                            <div class="form-file">
-                                                <input type="file" class="form-file-input form-control">
-                                            </div>
-                                        </div>
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                    </div>
+					</div>
                 </div>
             </div>
         </div>
