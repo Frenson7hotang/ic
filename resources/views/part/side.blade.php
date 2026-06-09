@@ -40,6 +40,7 @@
                             <li><a href="chart-chartjs.html">Status</a></li>
                             <li><a href="chart-chartist.html">Payroll</a></li>
                             <li><a href="chart-sparkline.html">User</a></li>
+							<li><a href="chart-sparkline.html">Jabatan</a></li>
                         </ul>
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -53,7 +54,7 @@
                            
                         </ul>
                     </li>
-                    <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
+                    <li><a href="{{route('departement') }}" class="ai-icon" aria-expanded="false">
 							<i class="flaticon-381-network"></i>
 							<span class="nav-text">Departement</span>
 						</a>

@@ -728,7 +728,8 @@
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form>
+                                    <form action ="/post" method="post" enctype="multipart/form-data">
+										@csrf
                                         <div class="row">
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Nama Karyawan</label>
@@ -748,16 +749,25 @@
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Departement</label>
-                                                <select id="inputState" class="default-select form-control wide">
+                                                <select id="inputState" name="departement" class="default-select form-control wide">
                                                     <option selected="">Pilih...</option>
-                                                    <option>Option 1</option>
-                                                    <option>Option 2</option>
-                                                    <option>Option 3</option>
+                                                    @foreach($dept as $deptt)
+                                                    <option value = "{{ $deptt -> id_dept }}">
+													{{ $deptt -> nama_dept }}	
+													</option>
+													@endforeach
                                                 </select>
                                             </div>
                                              <div class="mb-3 col-md-6">
-                                                <label>Jabatan</label>
-                                                <input type="text" class="form-control" name="jabatan" placeholder="jabatan.." required>
+                                                <label class="form-label">Jabatan</label>
+                                                <select id="inputState" name="jabatan" class="default-select form-control wide">
+                                                    <option selected="">Pilih...</option>
+                                                    @foreach($jabatan as $job)
+                                                    <option value = "{{ $deptt -> id_dept }}">
+													{{ $job -> jabatan }}	
+													</option>
+													@endforeach
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -767,16 +777,18 @@
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Status Karyawan</label>
-                                                <select id="inputState" class="default-select form-control wide">
+                                                <select id="inputState" name="departement" class="default-select form-control wide">
                                                     <option selected="">Pilih...</option>
-                                                    <option>Option 1</option>
-                                                    <option>Option 2</option>
-                                                    <option>Option 3</option>
+													@foreach($status as $stat)
+                                                    <option value="{{ $stat -> id_stat }}">
+													{{ $stat->status_jabatan }}
+												</option>
+												@endforeach
                                                 </select>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Hak Cuti</label>
-                                                <input type="text" class="form-control" name="hak_cuti" placeholder="masukkan hak cuti" require>
+                                                <input type="text" class="form-control" name="hak_cuti" placeholder="masukkan hak cuti.." require>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Gambar</label>

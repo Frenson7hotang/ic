@@ -9,6 +9,7 @@ class ProfilModel extends Model
     protected $table = 'tb_profil';
 
     protected $fillable = [
+        'id_user',
         'nama_user',
         'nik',
         'tempat_lahir',
