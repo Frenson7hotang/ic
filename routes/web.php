@@ -12,6 +12,9 @@ Route::get('/', function () {
 
 Route::get('/profil', [ProfilController::class, 'profil'])->name('profil');
 Route::get('/tambah-profil', [ProfilController::class, 'tambah'])->name('tambah-profil');
+Route::post('/simpan-profil', [ProfilController::class, 'simpan'])->name('simpan-profil');
+Route::get('/profil/edit/{id}', [ProfilController::class, 'edit'])->name('edit');
+Route::get('/profil/hapus/{id}', [ProfilController::class, 'hapus'])->name('hapus');
 
 //Departement Route
 

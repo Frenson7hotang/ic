@@ -728,7 +728,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form action ="/post" method="post" enctype="multipart/form-data">
+                                    <form action ="{{ route('simpan-profil') }}" method="post" enctype="multipart/form-data">
 										@csrf
                                         <div class="row">
                                             <div class="mb-3 col-md-6">
@@ -758,12 +758,16 @@
 													@endforeach
                                                 </select>
                                             </div>
+											<div class="mb-3 col-md-6">
+                                                <label>Alamat Email</label>
+                                                <input type="text" class="form-control" name="alamat_email" placeholder="masukkan email.." required>
+                                            </div>
                                              <div class="mb-3 col-md-6">
                                                 <label class="form-label">Jabatan</label>
                                                 <select id="inputState" name="jabatan" class="default-select form-control wide">
                                                     <option selected="">Pilih...</option>
                                                     @foreach($jabatan as $job)
-                                                    <option value = "{{ $deptt -> id_dept }}">
+                                                    <option value = "{{ $job -> id_jabatan }}">
 													{{ $job -> jabatan }}	
 													</option>
 													@endforeach
@@ -777,7 +781,7 @@
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Status Karyawan</label>
-                                                <select id="inputState" name="departement" class="default-select form-control wide">
+                                                <select id="inputState" name="status_karyawan" class="default-select form-control wide">
                                                     <option selected="">Pilih...</option>
 													@foreach($status as $stat)
                                                     <option value="{{ $stat -> id_stat }}">
@@ -788,11 +792,11 @@
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Hak Cuti</label>
-                                                <input type="text" class="form-control" name="hak_cuti" placeholder="masukkan hak cuti.." require>
+                                                <input type="text" class="form-control" name="hak_cuti" placeholder="masukkan hak cuti.." required>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Gambar</label>
-                                                <input type="file" class="form-control" name="gambar" require>
+                                                <input type="file" class="form-control" name="gambar">
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Simpan</button>
