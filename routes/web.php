@@ -13,8 +13,9 @@ Route::get('/', function () {
 Route::get('/profil', [ProfilController::class, 'profil'])->name('profil');
 Route::get('/tambah-profil', [ProfilController::class, 'tambah'])->name('tambah-profil');
 Route::post('/simpan-profil', [ProfilController::class, 'simpan'])->name('simpan-profil');
-Route::get('/profil/edit/{id}', [ProfilController::class, 'edit'])->name('edit');
-Route::get('/profil/hapus/{id}', [ProfilController::class, 'hapus'])->name('hapus');
+Route::get('/profil/edit/{id_user}', [ProfilController::class, 'edit'])->name('edit-profil');
+Route::post('/update/profil/{id_user}', [ProfilController::class, 'update'])->name('update-profil');
+Route::get('/profil/hapus/{id_user}', [ProfilController::class, 'hapus'])->name('hapus');
 
 //Departement Route
 

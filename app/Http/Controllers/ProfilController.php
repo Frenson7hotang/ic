@@ -69,8 +69,28 @@ class ProfilController extends Controller
 
             public function edit($id_user)
             {
-                 $profils = Profil::where('id_user', $id_user)->firstOrFail();
+                 $profils = ProfilModel::where('id_user', $id_user)->firstOrFail();
+                 $dept = DeptModel::all();
+                 $jabatan = JabatanModel::all();
+                 $status = StatusModel::all();
+                 return view('profil-edit', compact('profils', 'dept', 'jabatan', 'status'));
+            }
+            
+            public function update(Request $request, $id_user)
+            {
+             $validated = $request->validate([
+                'nama_user' => 'required',
+                'nik' => 'required',
+                'tempat_lahir' => 'required',
+                'tanggal_lahir' => 'required',
+                'departement' => 'required',
+                'alamat_email' => 'required',
+                'jabatan' => 'required',
+                'tanggal_bergabung' => 'required',
+                'status_karyawan' => 'required',
+                'hak_cuti' => 'required',
+                'gambar' => 'nullable|file|mimes:jpg,jpeg,png,mp4,pdf|max:10240',
+                ]); 
 
-                 return view('profil-edit', compact('profils'));
             }
 }

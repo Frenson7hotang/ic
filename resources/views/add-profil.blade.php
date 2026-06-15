@@ -741,7 +741,7 @@
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Tempat Lahir</label>
-                                                <input type="text" class="form-control" name="tempat_lahir" placeholder="masukkan tempat lahir.." required>
+                                                <input type="text" class="form-control" name="tempat_lahir" placeholder="masukkan tempat lahir karyawan.." required>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label>Tanggal Lahir</label>
@@ -760,7 +760,7 @@
                                             </div>
 											<div class="mb-3 col-md-6">
                                                 <label>Alamat Email</label>
-                                                <input type="text" class="form-control" name="alamat_email" placeholder="masukkan email.." required>
+                                                <input type="text" class="form-control" name="alamat_email" placeholder="masukkan alamat email karyawan.." required>
                                             </div>
                                              <div class="mb-3 col-md-6">
                                                 <label class="form-label">Jabatan</label>
@@ -792,7 +792,7 @@
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Hak Cuti</label>
-                                                <input type="text" class="form-control" name="hak_cuti" placeholder="masukkan hak cuti.." required>
+                                                <input type="text" class="form-control" name="hak_cuti" placeholder="masukkan hak cuti karyawan.." required>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Gambar</label>

@@ -771,8 +771,8 @@
 												<td><img class="rounded-circle" width="75" height="75" src="{{ Storage::url($profils->gambar) }}" alt=""></td>
                                                 <td>
 													<div class="d-flex">
-														<a href="{{ route('edit', ['id' => $profils->id_user]) }}" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-														<a href="{{ route('hapus', ['id' => $profils->id_user]) }}" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<a href="{{ route('edit-profil', ['id_user' => $profils->id_user]) }}" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
+														<a href="{{ route('hapus', ['id_user' => $profils->id_user]) }}" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
 													</div>
 												</td>
                                             </tr>
