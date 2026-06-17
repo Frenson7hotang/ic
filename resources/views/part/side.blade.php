@@ -48,7 +48,7 @@
 							<span class="nav-text">Perjalanan</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="ui-accordion.html">Rute</a></li>
+                            <li><a href="{{route('rute') }}">Rute</a></li>
                             <li><a href="ui-alert.html">SPPD / Perjalanan Luar Kota</a></li>
                             <li><a href="ui-badge.html">SPPB / Pengantaran Barang</a></li>
                            
