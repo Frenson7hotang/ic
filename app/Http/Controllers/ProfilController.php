@@ -76,21 +76,66 @@ class ProfilController extends Controller
                  return view('profil-edit', compact('profils', 'dept', 'jabatan', 'status'));
             }
             
-            public function update(Request $request, $id_user)
+            public function update(Request $request, $id)
             {
-             $validated = $request->validate([
-                'nama_user' => 'required',
-                'nik' => 'required',
-                'tempat_lahir' => 'required',
-                'tanggal_lahir' => 'required',
-                'departement' => 'required',
-                'alamat_email' => 'required',
-                'jabatan' => 'required',
-                'tanggal_bergabung' => 'required',
-                'status_karyawan' => 'required',
-                'hak_cuti' => 'required',
-                'gambar' => 'nullable|file|mimes:jpg,jpeg,png,mp4,pdf|max:10240',
-                ]); 
+                $validated = $request->validate([
+                    'nama_user' => 'required',
+                    'nik' => 'required',
+                    'tempat_lahir' => 'required',
+                    'tanggal_lahir' => 'required',
+                    'departement' => 'required',
+                    'alamat_email' => 'required',
+                    'jabatan' => 'required',
+                    'tanggal_bergabung' => 'required',
+                    'status_karyawan' => 'required',
+                    'hak_cuti' => 'required',
+                    'gambar' => 'nullable|file|mimes:jpg,jpeg,png,mp4,pdf|max:10240',
+                ]);
 
+                $profil = ProfilModel::findOrFail($id);
+
+                $mediaPath = $profil->gambar; // gunakan gambar lama sebagai default
+
+                if ($request->hasFile('gambar')) {
+
+                    // Hapus file lama jika ada
+                    if ($profil->gambar && Storage::disk('public')->exists($profil->gambar)) {
+                        Storage::disk('public')->delete($profil->gambar);
+                    }
+
+                    // Upload file baru
+                    $mediaPath = $request->file('gambar')->store('gambar', 'public');
+                }
+
+                $profil->update([
+                    'nama_user' => $request->nama_user,
+                    'nik' => $request->nik,
+                    'tempat_lahir' => $request->tempat_lahir,
+                    'tanggal_lahir' => $request->tanggal_lahir,
+                    'departement' => $request->departement,
+                    'alamat_email' => $request->alamat_email,
+                    'jabatan' => $request->jabatan,
+                    'tanggal_bergabung' => $request->tanggal_bergabung,
+                    'status_karyawan' => $request->status_karyawan,
+                    'hak_cuti' => $request->hak_cuti,
+                    'gambar' => $mediaPath,
+                ]);
+
+                return redirect()->back()->with('success', 'Data berhasil diupdate');
+            }
+
+            public function delete($id_user)
+            {
+                $profil = ProfilModel::findOrFail($id_user);
+
+                // Hapus file jika ada
+                if ($profil->gambar && Storage::disk('public')->exists($profil->gambar)) {
+                    Storage::disk('public')->delete($profil->gambar);
+                }
+
+                // Hapus data dari database
+                $profil->delete();
+
+                return redirect()->back()->with('success', 'Data berhasil dihapus');
             }
 }

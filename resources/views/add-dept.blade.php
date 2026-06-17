@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 @include('part.head')
+
 <body>
-
-
     <!--**********************************
         Main wrapper start
     ***********************************-->
@@ -13,12 +11,12 @@
         <!--**********************************
             Nav header start
         ***********************************-->
-       @include('part.nav')
+      @include('part.nav')
         <!--**********************************
             Nav header end
         ***********************************-->
-		
-		<!--**********************************
+
+        <!--**********************************
             Header start
         ***********************************-->
         <div class="header">
@@ -27,7 +25,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
 							<div class="dashboard_bar">
-                                Datatable 
+                                Form Element 
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
@@ -60,78 +58,36 @@
         ***********************************-->
         <div class="content-body">
             <div class="container-fluid">
-				
 				<div class="row page-titles">
 					<ol class="breadcrumb">
-						<li class="breadcrumb-item active"><a href="javascript:void(0)">Dashboard</a></li>
-						<li class="breadcrumb-item"><a href="javascript:void(0)">Data Profil</a></li>
+						<li class="breadcrumb-item active"><a href="javascript:void(0)">Form</a></li>
+						<li class="breadcrumb-item"><a href="javascript:void(0)">Element</a></li>
 					</ol>
                 </div>
                 <!-- row -->
-
-
                 <div class="row">
-					<div class="col-12">
+					<div class="col-xl-12 col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Departement Datatable</h4>
-								<a href="{{ route('tambah-dept') }}" class="btn btn-primary">
-									<i class="fa fa-plus"></i> Tambah Profil
-								</a>
+                                <h4 class="card-title">Tambah Data Departement</h4>
                             </div>
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="example3" class="display" style="min-width: 845px">
-                                        <thead>
-                                            <tr>
-                                                <th>NO</th>
-                                                <th>Nama Departement</th>
-                                                <th>Jumlah Staff</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-											@foreach ($dept as $key => $depart)
-                                            <tr>
-												<td><a href="javascript:void(0);"><strong>{{ $key + 1 }}</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>{{$depart -> nama_dept}}</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>{{$depart -> jumlah_staff}}</strong></a></td>
-                                                <td>
-													<div class="d-flex">
-
-														<!-- Tombol Edit -->
-														<a href="{{ route('edit-dept', ['id_dept' => $depart->id_dept]) }}" 
-														class="btn btn-primary shadow btn-xs sharp me-1">
-															<i class="fas fa-pencil-alt"></i>
-														</a>
-
-														<!-- Tombol Hapus -->
-														<form action="{{ route('hapus-dept', ['id_dept' => $depart->id_dept]) }}" 
-															method="POST" 
-															style="display:inline;">
-															
-															@csrf
-															@method('DELETE')
-
-															<button type="submit" 
-																	class="btn btn-danger shadow btn-xs sharp"
-																	onclick="return confirm('Yakin ingin menghapus data {{ $depart->nama_dept }}?')">
-																<i class="fa fa-trash"></i>
-															</button>
-
-														</form>
-
-													</div>
-												</td>
-                                            </tr>
-											@endforeach
-                                        </tbody>
-                                    </table>
+                                <div class="basic-form">
+                                    <form action ="{{ route('simpan-dept') }}" method="post">
+										@csrf
+                                        <div class="row">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Nama Departement</label>
+                                                <input type="text" class="form-control" name="nama_dept" placeholder="masukkan nama departement.." required>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                    </div>
-				</div>
+					</div>
+                </div>
             </div>
         </div>
         <!--**********************************
@@ -142,7 +98,7 @@
         <!--**********************************
             Footer start
         ***********************************-->
-       @include('part.foot')
+        @include('part.foot')
         <!--**********************************
             Footer end
         ***********************************-->
