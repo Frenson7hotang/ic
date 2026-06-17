@@ -26,6 +26,8 @@ class ProfilModel extends Model
         'hak_cuti',
         'gambar'
     ];
+
+    
     public function dept()
     {
          return $this->belongsTo(DeptModel::class, 'departement', 'id_dept');

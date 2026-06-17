@@ -15,6 +15,14 @@ class DeptModel extends Model
      protected $fillable = [
         'id_dept',
         'nama_dept',
-        'jumlah_staff'
     ];
+    
+    public function profil()
+    {
+        return $this->hasMany(
+            ProfilModel::class,
+            'departement',
+            'id_dept'
+        );
+    }
 }

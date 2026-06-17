@@ -95,7 +95,7 @@
                                             <tr>
 												<td><a href="javascript:void(0);"><strong>{{ $key + 1 }}</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>{{$depart -> nama_dept}}</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>{{$depart -> jumlah_staff}}</strong></a></td>
+                                                <td><a href="javascript:void(0);"><strong>{{$depart -> profil_count}}</strong></a></td>
                                                 <td>
 													<div class="d-flex">
 

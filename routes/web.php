@@ -23,4 +23,5 @@ Route::get('/departement', [DeptController::class, 'dept'])->name('departement')
 Route::get('/tambah-dept', [DeptController::class, 'tambah'])->name('tambah-dept');
 Route::post('/simpan-dept', [DeptController::class, 'simpan'])->name('simpan-dept');
 Route::get('/dept/edit/{id_dept}', [DeptController::class, 'edit'])->name('edit-dept');
+Route::put('/update/dept/{id_dept}', [DeptController::class, 'update'])->name('update-dept');
 Route::delete('/delete/dept/{id_dept}', [DeptController::class, 'delete'])->name('hapus-dept');
