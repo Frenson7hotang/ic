@@ -86,7 +86,6 @@
                                             <tr>
                                                 <th>NO</th>
                                                 <th>Nama Rute</th>
-                                                <th>Jumlah Jarak</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -95,7 +94,6 @@
                                             <tr>
 												<td><a href="javascript:void(0);"><strong>{{ $key + 1 }}</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>{{$rut -> nama_rute}}</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>{{$rut -> jarak}}</strong></a></td>
                                                 <td>
 													<div class="d-flex">
 

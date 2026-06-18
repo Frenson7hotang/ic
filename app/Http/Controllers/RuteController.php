@@ -23,12 +23,10 @@ class RuteController extends Controller
     {
         $validated = $request->validate([
         'nama_rute' => 'required',
-        'jarak' => 'required'
         ]);
         
         RuteModel::create([
         'nama_rute' => $request->nama_rute,
-        'jarak' => $request->jarak
         ]);
 
         return redirect()->back()->with('success', 'Data berhasil disimpan');
@@ -44,14 +42,12 @@ class RuteController extends Controller
     {
         $validated = $request->validate([
         'nama_rute' => 'required',
-        'jarak' => 'required'
         ]);
 
          $Rute = RuteModel::findOrFail($id_rute);
 
          $Rute->update([
          'nama_rute' => $request->nama_rute,
-         'jarak' => $request->jarak
          ]);
 
         return redirect()->back()->with('success', 'Data berhasil diupdate');

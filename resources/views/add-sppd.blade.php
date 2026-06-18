@@ -66,21 +66,65 @@
                 </div>
                 <!-- row -->
                 <div class="row">
-					<div class="col-xl-12 col-lg-12">
+					<div class="col-xl-auto col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Tambah Data Rute</h4>
+                                <h4 class="card-title">Tambah Data SPPD</h4>
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form action ="{{ route('simpan-rute') }}" method="post">
+                                    <form action ="{{ route('simpan-profil') }}" method="post">
 										@csrf
                                         <div class="row">
                                             <div class="mb-3 col-md-6">
-                                                <label class="form-label">Nama Rute</label>
-                                                <input type="text" class="form-control" name="nama_rute" placeholder="masukkan nama rute.." required>
+                                                <label class="form-label">Asal</label>
+                                                <select id="inputState" name="departement" class="default-select form-control wide">
+                                                    <option selected="">Pilih...</option>
+                                                    @foreach($rute as $rutee)
+                                                    <option value = "{{ $rutee -> id_rute }}">
+													{{ $rutee -> nama_rute }}	
+													</option>
+													@endforeach
+                                                </select>
                                             </div>
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Tujuan</label>
+                                                <select id="inputState" name="departement" class="default-select form-control wide">
+                                                    <option selected="">Pilih...</option>
+                                                    @foreach($rute as $rutee)
+                                                    <option value = "{{ $rutee -> id_rute }}">
+													{{ $rutee -> nama_rute }}	
+													</option>
+													@endforeach
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Keperluan</label>
+                                                <input type="text" class="form-control" name="keperluan" placeholder="masukkan keperluan.." required>
+                                            </div>
+                                            <div class="mb-3 col-md-6">
+                                                <label>Keterangan</label>
+                                                <input type="text" class="form-control" name="keterangan" placeholder="masukkan keterangan.." required>
+                                            </div>
+											<div class="mb-3 col-md-6">
+                                                <label>Tanggal Berangkat</label>
+                                                <input type="date" class="form-control" name="tanggal_berangkat">
+                                            </div>
+                                            <div class="mb-3 col-md-6">
+                                                <label>Tanggal Pulang</label>
+                                                <input type="date" class="form-control" name="tanggal_pulang">
+                                            </div>
+                                           <div class="mb-3 col-md-6">
+                                            <label class="form-label">Nama Karyawan</label>
+                                            <div class="input-group">
+                                                <input type="text" id="display_karyawan" class="form-control" placeholder="Belum ada yang dipilih" readonly data-bs-toggle="modal" data-bs-target="#modalKaryawan" style="cursor: pointer;">
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKaryawan">Pilih</button>
+                                            </div>
+                                            <div id="hidden_inputs"></div>
                                         </div>
+                                        @include('modal-sppd')
+                                    </div>
+                                </div>
                                         <button type="submit" class="btn btn-primary">Simpan</button>
                                     </form>
                                 </div>

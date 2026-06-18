@@ -25,4 +25,8 @@ class DeptModel extends Model
             'id_dept'
         );
     }
+    public function sppd()
+    {
+        
+    }
 }

@@ -43,6 +43,6 @@ Route::delete('/delete/rute/{id_rute}', [RuteController::class, 'delete'])->name
 Route::get('/sppd', [SppdController::class, 'sppd'])->name('sppd');
 Route::get('/tambah-sppd', [SppdController::class, 'tambah'])->name('tambah-sppd');
 Route::post('/simpan-sppd', [SppdController::class, 'simpan'])->name('simpan-sppd');
-Route::get('/sppd/edit/{id_sppd}', [SppdController::class, 'edit'])->name('edit-sppd');
-Route::put('/update/sppd/{id_sppd}', [SppdController::class, 'update'])->name('update-sppd');
-Route::delete('/delete/sppd/{id_sppd}', [SppdController::class, 'delete'])->name('hapus-sppd');
+Route::get('/sppd/edit/{id_perjalanan}', [SppdController::class, 'edit'])->name('edit-sppd');
+Route::put('/update/sppd/{id_perjalanan}', [SppdController::class, 'update'])->name('update-sppd');
+Route::delete('/delete/sppd/{id_perjalanan}', [SppdController::class, 'delete'])->name('hapus-sppd');

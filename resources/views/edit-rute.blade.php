@@ -81,10 +81,6 @@
                                                 <label class="form-label">Nama Rute</label>
                                                 <input type="text" class="form-control" name="nama_rute" placeholder="masukkan nama rute.." value="{{ old('nama_rute', $Rute->nama_rute) }}">
                                             </div>
-                                            <div class="mb-3 col-md-6">
-                                                <label class="form-label">Jarak</label>
-                                                <input type="text" class="form-control" name="jarak" placeholder="masukkan jarak.." value="{{ old('jarak', $Rute->jarak) }}">
-                                            </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Simpan</button>
                                     </form>

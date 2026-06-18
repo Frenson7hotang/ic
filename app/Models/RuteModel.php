@@ -14,7 +14,6 @@ class RuteModel extends Model
      
      protected $fillable = [
         'id_dept',
-        'nama_rute',
-        'jarak'
+        'nama_rute'
     ];
 }
