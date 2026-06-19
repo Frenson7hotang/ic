@@ -73,12 +73,12 @@
                             </div>
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form action ="{{ route('simpan-profil') }}" method="post">
+                                    <form action ="{{ route('simpan-sppd') }}" method="post">
 										@csrf
                                         <div class="row">
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Asal</label>
-                                                <select id="inputState" name="departement" class="default-select form-control wide">
+                                                <select id="inputState" name="asal" class="default-select form-control wide">
                                                     <option selected="">Pilih...</option>
                                                     @foreach($rute as $rutee)
                                                     <option value = "{{ $rutee -> id_rute }}">
@@ -89,7 +89,7 @@
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Tujuan</label>
-                                                <select id="inputState" name="departement" class="default-select form-control wide">
+                                                <select id="inputState" name="tujuan" class="default-select form-control wide">
                                                     <option selected="">Pilih...</option>
                                                     @foreach($rute as $rutee)
                                                     <option value = "{{ $rutee -> id_rute }}">
@@ -104,7 +104,7 @@
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label>Keterangan</label>
-                                                <input type="text" class="form-control" name="keterangan" placeholder="masukkan keterangan.." required>
+                                                <textarea class="form-control" name="keterangan" placeholder="masukkan keterangan.." required></textarea>
                                             </div>
 											<div class="mb-3 col-md-6">
                                                 <label>Tanggal Berangkat</label>

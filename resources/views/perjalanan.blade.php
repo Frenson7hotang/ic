@@ -102,49 +102,45 @@
                                                 <th>Tanggal Berangkat</th>
 												<th>Tanggal Pulang</th>
                                                 <th>Nama Karyawan</th>
+                                                <th>Driver</th>
                                                 <th>Status</th>
-                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
 											@foreach ($luar as $key => $kota)
                                             <tr>
 												<td><a href="javascript:void(0);"><strong>{{ $key + 1 }}</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>{{$kota -> asal}}</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>{{$kota -> tujuan}}</strong></a></td>
+                                                <td><a href="javascript:void(0);"><strong>{{$kota -> asal -> nama_rute ?? '-'}}</strong></a></td>
+                                                <td><a href="javascript:void(0);"><strong>{{$kota -> tujuan -> nama_rute ?? '-'}}</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>{{$kota -> keperluan}}</strong></a></td>
 												<td><a href="javascript:void(0);"><strong>{{$kota -> keterangan}}</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>{{$kota -> tanggal_berangkat}}</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>{{$kota -> tanggal_pulang}}</strong></a></td>
-												<td><a href="javascript:void(0);"><strong>{{$kota -> nama_karyawan ?? '-'}}</strong></a></td>
-												<td><a href="javascript:void(0);"><strong>{{$kota -> status}}</strong></a></td>
+												<td><a href="javascript:void(0);"><strong>{{$kota -> nama->nama_karyawan ?? '-' ?? '-'}}</strong></a></td>
                                                 <td>
-													<div class="d-flex">
-
-														<!-- Tombol Edit -->
-														<a href="{{ route('edit-sppd', ['id_perjalanan' => $kota->id_perjalanan]) }}" 
-														class="btn btn-primary shadow btn-xs sharp me-1">
-															<i class="fas fa-pencil-alt"></i>
-														</a>
-
-														<!-- Tombol Hapus -->
-														<form action="{{ route('hapus-sppd', ['id_perjalanan' => $kota->id_perjalanan]) }}" 
-															method="POST" 
-															style="display:inline;">
-															
-															@csrf
-															@method('DELETE')
-
-															<button type="submit" 
-																	class="btn btn-danger shadow btn-xs sharp"
-																	onclick="return confirm('Yakin ingin menghapus data {{ $kota->nama_user }}?')">
-																<i class="fa fa-trash"></i>
-															</button>
-
-														</form>
-
-													</div>
-												</td>
+                                                    <a href="javascript:void(0);">
+                                                        <strong>
+                                                            {{ $kota->status == 0 ? 'Menunggu Konfirmasi HRD' : ($kota->driver) }}
+                                                        </strong>
+                                                    </a>
+                                                </td>
+												<td>
+                                                    <a href="javascript:void(0);">
+                                                        <strong>
+                                                            @if($kota->status == 0)
+                                                                <span class="text-warning">Menunggu Approval HRD</span>
+                                                            @elseif($kota->status == 1)
+                                                                <span class="text-success">Telah Acc HRD, Menunggu Approval Direktur Operasional</span>
+                                                            @elseif($kota->status == 2)
+                                                                <span class="text-success">Sudah Di Acc DirOps, Menunggu Pencairan Dana</span>
+                                                            @elseif($kota->status == 3)
+                                                                <span class="text-info">Dana Telah di cairkan</span>
+                                                            @else
+                                                                <span class="text-danger">Pengajuan Di tolak</span>
+                                                            @endif
+                                                        </strong>
+                                                    </a>
+                                                </td>
                                             </tr>
 											@endforeach
                                         </tbody>

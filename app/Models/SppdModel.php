@@ -18,9 +18,20 @@ class SppdModel extends Model
         'tujuan',
         'keperluan',
         'keterangan',
-        'tanggal_berankat',
+        'tanggal_berangkat',
         'tanggal_pulang',
         'nama_karyawan',
+        'driver',
         'status'
     ];
+
+    public function asal()
+    {
+         return $this->belongsTo(RuteModel::class, 'asal', 'id_rute');
+    }
+    public function tujuan()
+    {
+         return $this->belongsTo(RuteModel::class, 'tujuan', 'id_rute');
+    }
+    
 }

@@ -12,7 +12,7 @@
                         @foreach($profil as $p)
                         <div class="karyawan-wrapper karyawan-item p-2 border-bottom" data-name="{{ strtolower($p->nama_user) }}" style="display: flex; align-items: center;">
                             
-                            <input class="checkbox-karyawan" type="checkbox" value="{{ $p->id_profil }}" id="check_{{ $p->id_profil }}" data-label="{{ $p->nama_user }}" style="width: 20px; height: 20px; margin-right: 15px;">
+                            <input class="checkbox-karyawan" type="checkbox" value="{{ $p->id_user }}" id="check_{{ $p->id_user }}" data-label="{{ $p->nama_user }}" style="width: 20px; height: 20px; margin-right: 15px;">
                             
                             <label for="check_{{ $p->id_profil }}" style="margin: 0; cursor: pointer;">
                                 {{ $p->nama_user }} | {{ $p->dept->nama_dept ?? '-' }}
