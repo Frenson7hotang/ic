@@ -16,4 +16,6 @@ class RuteModel extends Model
         'id_rute',
         'nama_rute'
     ];
+
+    
 }

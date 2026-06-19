@@ -12,7 +12,7 @@ class SppdController extends Controller
     public function sppd()
     {
     
-        $luar = SppdModel::with(['asal', 'tujuan'])->get();
+        $luar = SppdModel::with(['start', 'finish'])->get();
         return view('perjalanan', ['luar' => $luar]);
     }
 

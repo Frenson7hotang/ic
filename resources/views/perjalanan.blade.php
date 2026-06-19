@@ -110,8 +110,8 @@
 											@foreach ($luar as $key => $kota)
                                             <tr>
 												<td><a href="javascript:void(0);"><strong>{{ $key + 1 }}</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>{{$kota -> asal -> nama_rute ?? '-'}}</strong></a></td>
-                                                <td><a href="javascript:void(0);"><strong>{{$kota -> tujuan -> nama_rute ?? '-'}}</strong></a></td>
+                                                <td><a href="javascript:void(0);"><strong>{{$kota -> start -> nama_rute ?? '-'}}</strong></a></td>
+                                                <td><a href="javascript:void(0);"><strong>{{$kota -> finish -> nama_rute ?? '-'}}</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>{{$kota -> keperluan}}</strong></a></td>
 												<td><a href="javascript:void(0);"><strong>{{$kota -> keterangan}}</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>{{$kota -> tanggal_berangkat}}</strong></a></td>

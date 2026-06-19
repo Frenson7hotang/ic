@@ -25,11 +25,11 @@ class SppdModel extends Model
         'status'
     ];
 
-    public function asal()
+    public function start()
     {
          return $this->belongsTo(RuteModel::class, 'asal', 'id_rute');
     }
-    public function tujuan()
+    public function finish()
     {
          return $this->belongsTo(RuteModel::class, 'tujuan', 'id_rute');
     }
