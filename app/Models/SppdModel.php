@@ -25,6 +25,15 @@ class SppdModel extends Model
         'status'
     ];
 
+    protected $casts = [
+     'nama_karyawan' => 'array'
+    ];
+    public function getListNamaAttribute()
+    {
+        return ProfilModel::whereIn('id_user', $this->nama_karyawan)
+            ->pluck('nama_user');
+    }
+
     public function start()
     {
          return $this->belongsTo(RuteModel::class, 'asal', 'id_rute');

@@ -40,4 +40,6 @@ class ProfilModel extends Model
     {
          return $this->belongsTo(JabatanModel::class, 'jabatan', 'id_jabatan');
     }
+
+    
 }

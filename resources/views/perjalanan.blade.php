@@ -40,14 +40,6 @@
                                 Datatable 
                             </div>
                         </div>
-                        <ul class="navbar-nav header-right">
-							<li class="nav-item">
-								<div class="input-group search-area">
-									<input type="text" class="form-control" placeholder="Search here...">
-									<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-								</div>
-							</li>
-                        </ul>
                     </div>
 				</nav>
 			</div>
@@ -104,6 +96,7 @@
                                                 <th>Nama Karyawan</th>
                                                 <th>Driver</th>
                                                 <th>Status</th>
+                                                <th>Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -116,7 +109,7 @@
 												<td><a href="javascript:void(0);"><strong>{{$kota -> keterangan}}</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>{{$kota -> tanggal_berangkat}}</strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong>{{$kota -> tanggal_pulang}}</strong></a></td>
-												<td><a href="javascript:void(0);"><strong>{{$kota -> nama->nama_karyawan ?? '-' ?? '-'}}</strong></a></td>
+												<td><a href="javascript:void(0);"><strong>{{ $kota->listNama->implode(', ') }}</strong></a></td>
                                                 <td>
                                                     <a href="javascript:void(0);">
                                                         <strong>
@@ -140,6 +133,33 @@
                                                             @endif
                                                         </strong>
                                                     </a>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex">
+
+														<!-- Tombol Edit -->
+														<a href="{{ route('edit-sppd', ['id_perjalanan' => $kota->id_perjalanan]) }}" 
+														class="btn btn-primary shadow btn-xs sharp me-1">
+															<i class="fas fa-pencil-alt"></i>
+														</a>
+
+														<!-- Tombol Hapus -->
+														<form action="{{ route('hapus-sppd', ['id_perjalanan' => $kota->id_perjalanan]) }}" 
+															method="POST" 
+															style="display:inline;">
+															
+															@csrf
+															@method('DELETE')
+
+															<button type="submit" 
+																	class="btn btn-danger shadow btn-xs sharp"
+																	onclick="return confirm('Yakin ingin menghapus keberangkatan {{ $kota->tanggal_berangkat }}?')">
+																<i class="fa fa-trash"></i>
+															</button>
+
+														</form>
+
+													</div>
                                                 </td>
                                             </tr>
 											@endforeach
